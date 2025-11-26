@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Josue Moran – Data Engineer</title>
+    <meta
+      name="description"
+      content="Freelance data engineer working with fintech and startups. I build data solutions, analytics layers and ML-ready systems."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #22c55e, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Scroll reveal base state */
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      /* When visible */
+      .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-20 bg-slate-950/80 backdrop-blur border-b border-slate-800"
+    >
+      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+        <!-- OPTION B: SMALL AVATAR IN NAVBAR -->
+        <div class="flex items-center gap-2 font-semibold tracking-tight">
+          <div>
+            <span class="gradient-text">JM</span>
+            <span class="ml-1 text-slate-300">Data Engineer</span>
+          </div>
+        </div>
+
+        <nav class="hidden sm:flex gap-6 text-sm text-slate-300">
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#work" class="hover:text-white">Experience</a>
+          <a href="#stealth" class="hover:text-white">Building</a>
+          <a href="#stack" class="hover:text-white">Stack</a>
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+        <a
+          href="#contact"
+          class="text-xs sm:text-sm px-3 py-1.5 rounded-full bg-slate-100 text-slate-900 font-medium hover:bg-white"
+        >
+          Let’s talk
+        </a>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4">
+      <!-- HERO -->
+      <section class="py-16 sm:py-20" id="top">
+        <div class="grid md:grid-cols-[3fr,2fr] gap-10 items-center">
+          <div class="reveal">
+            <p
+              class="text-xs font-medium uppercase tracking-[0.2em] text-blue-400 mb-3"
+            >
+              Freelance Data Engineer
+            </p>
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-4"
+            >
+              I build <span class="gradient-text">data solutions</span>
+              for teams that want to be more data-driven.
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 mb-4 max-w-xl">
+              I work with a London-based fintech where I build ingestion
+              pipelines, reconciliation workflows and ML-ready datasets. I focus
+              on stable, maintainable systems and learning fast by applying new
+              tools to real problems.
+            </p>
+
+            <p class="text-xs sm:text-sm text-blue-400 mb-6">
+              Available for freelance data engineering projects · Based in
+              Europe · Working globally
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+              <a
+                href="#contact"
+                class="px-4 py-2 rounded-full bg-blue-500 text-slate-950 font-medium text-sm hover:bg-blue-400"
+              >
+                Discuss a project
+              </a>
+              <a
+                href="https://www.linkedin.com/in/josue-moran"
+                target="_blank"
+                class="text-sm text-slate-300 hover:text-white underline underline-offset-4"
+              >
+                View LinkedIn profile
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-400">
+              Fintech · Fashion · Sustainability · Construction
+            </p>
+          </div>
+
+          <!-- OPTION A: HERO PHOTO + CARDS -->
+          <div class="space-y-4 md:space-y-5 text-sm text-slate-300 reveal">
+            <!-- Hero photo (right column) -->
+            <div class="flex justify-center md:justify-end mb-2">
+              <!-- Replace src with your real image file, e.g. profile.jpg -->
+              <img
+                src="Profile photo - Josue.png"
+                alt="Profile photo of Josue Moran"
+                class="w-30 h-40 rounded-full border border-slate-700 shadow-lg shadow-slate-900/60 object-contain scale-90 object-[0px_3px]"
+              />
+            </div>
+
+            <div
+              class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                     transition-transform transition-colors duration-300
+                     hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+            >
+              <p class="text-xs font-medium text-slate-400 mb-1">Currently</p>
+              <p class="font-semibold text-slate-50">
+                Data Engineer (freelance) – London-based fintech
+              </p>
+              <p class="mt-1 text-xs text-slate-400">
+                Ingestion pipelines, reconciliation flows and internal data
+                workflows using Python, Airtable, AWS and MongoDB.
+              </p>
+            </div>
+            <div
+              class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                     transition-transform transition-colors duration-300
+                     hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+            >
+              <p class="text-xs font-medium text-slate-400 mb-1">
+                Learning path
+              </p>
+              <p class="font-semibold text-slate-50">
+                Growing in statistics, ML and AI systems
+              </p>
+              <p class="mt-1 text-xs text-slate-400">
+                Constantly improving my engineering skills and applying what I
+                learn to real projects, with the long-term goal of building
+                meaningful data &amp; AI products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="py-12 border-t border-slate-800 reveal">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-6">How I can help</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <h3 class="font-semibold mb-2">Data Engineering &amp; Pipelines</h3>
+            <p class="text-slate-300">
+              Design and build modern ETL/ELT pipelines with Python, SQL, dbt,
+              Airbyte and Snowflake. Move from scattered data to clean,
+              structured, documented workflows that your team can trust.
+            </p>
+          </div>
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <h3 class="font-semibold mb-2">Analytics Infrastructure</h3>
+            <p class="text-slate-300">
+              Semantic layers, metrics and dashboards tailored to how your team
+              makes decisions. Experience with Superset, Power BI and internal
+              BI tools for founders and small data teams.
+            </p>
+          </div>
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <h3 class="font-semibold mb-2">Practical Machine Learning</h3>
+            <p class="text-slate-300">
+              Forecasting, anomaly detection and lightweight ML systems where
+              they actually add value – with a focus on clarity and business
+              impact, not buzzwords.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-6 border border-dashed border-slate-800 rounded-2xl p-4 bg-slate-900/30 text-sm
+                 transition-transform transition-colors duration-300
+                 hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/60"
+        >
+          <h3 class="font-semibold mb-1">Early data teams &amp; startups</h3>
+          <p class="text-slate-300">
+            Ideal for founders or small teams who need their first data stack:
+            initial pipelines, first dashboards, or a simple, reliable
+            foundation to build on. I help you get clarity quickly so you can
+            focus on product and growth.
+          </p>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="work" class="py-12 border-t border-slate-800 reveal">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-6">
+          Selected experience
+        </h2>
+        <div class="space-y-4 text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <p
+              class="text-xs uppercase tracking-[0.18em] text-blue-400 mb-1"
+            >
+              Current
+            </p>
+            <p class="font-semibold">
+              Data Engineer (Freelance) – Fintech (London)
+            </p>
+            <p class="text-slate-300 mt-1">
+              Building ingestion and reconciliation pipelines for financial,
+              securities and sanctions data, using modern data tooling.
+              Supporting product, engineering and operations with reliable,
+              auditable data flows.
+            </p>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <p class="font-semibold">Data Analytics Engineer – Nude Project</p>
+            <p class="text-slate-300 mt-1">
+              Developed forecasting and supply-chain models for a high-growth
+              fashion brand. Designed dbt models, semantic layers and dashboards
+              to support purchasing and inventory planning.
+            </p>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40
+                   transition-transform transition-colors duration-300
+                   hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+          >
+            <p class="font-semibold">
+              Earlier experience – Hilton &amp; construction
+            </p>
+            <p class="text-slate-300 mt-1">
+              Analytics work in hospitality and exposure to construction
+              operations through family business projects, shaping a practical
+              understanding of real-world workflows.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEALTH -->
+      <section id="stealth" class="py-12 border-t border-slate-800 reveal">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">Building in stealth</h2>
+        <div
+          class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40 text-sm
+                 transition-transform transition-colors duration-300
+                 hover:-translate-y-1 hover:border-blue-500/70 hover:bg-slate-900/70"
+        >
+          <p class="font-semibold mb-1">
+            AI-powered workflow automation for construction &amp; transport
+          </p>
+          <p class="text-slate-300">
+            Exploring an early-stage product focused on hours tracking,
+            operational data and earned-wage automation in the construction and
+            transport sector. Early prototypes built with Python, SQL and modern
+            data tooling.
+          </p>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section id="stack" class="py-12 border-t border-slate-800 reveal">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-6">Tech stack</h2>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm"
+        >
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Python (pandas, scikit-learn)
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            SQL (CTEs, window functions)
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Snowflake
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            dbt
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Airbyte
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Superset · Power BI
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Git &amp; GitHub
+          </span>
+          <span
+            class="border border-slate-800 rounded-full px-3 py-1.5 text-center bg-slate-900/40
+                   transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            ML &amp; time-series forecasting
+          </span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="py-12 border-t border-slate-800 reveal">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">About</h2>
+
+        <!-- OPTION C: PHOTO IN ABOUT SECTION -->
+        <div class="md:flex md:items-start md:gap-8">
+          <!-- Show photo again here for comparison -->
+          <div class="hidden md:block flex-shrink-0">
+          </div>
+
+          <p class="text-sm text-slate-300 max-w-2xl mt-4 md:mt-0">
+            I’m a young Data Engineer interested in building systems that make
+            teams faster and more confident in their decisions. My path has
+            taken me through fashion, hospitality, construction and fintech –
+            each step teaching me to adapt, learn quickly and focus on what
+            actually matters.
+            <br /><br />
+            I care about clean data architectures, well-structured models and
+            solving problems with simple, reliable solutions. I’m still early in
+            my journey, but committed to improving every day and growing towards
+            building meaningful products in data and AI.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="py-12 border-t border-slate-800 mb-10 reveal"
+      >
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">Contact</h2>
+        <p class="text-sm text-slate-300 mb-4">
+          If you’d like to discuss a freelance project, collaborate, or explore
+          an idea, feel free to reach out.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 text-sm">
+          <a
+            href="mailto:your-email@example.com"
+            class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500 text-slate-950 font-medium hover:bg-blue-400"
+          >
+            Email me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/josue-moran"
+            target="_blank"
+            class="inline-flex items-center px-4 py-2 rounded-full border border-slate-700 text-slate-200 hover:border-slate-500"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-slate-800 py-4 text-center text-xs text-slate-500"
+    >
+      © <span id="year"></span> Josue Moran. All rights reserved.
+    </footer>
+
+    <script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Simple scroll reveal
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      revealElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
